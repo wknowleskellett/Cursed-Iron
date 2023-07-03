@@ -24,7 +24,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class CursedIronMod implements ModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+    public static final Logger LOGGER = LoggerFactory.getLogger("cursed_iron");
     public static final String MODID = "cursed_iron";
 
     public static final Item CURSED_IRON_INGOT = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_ingot"), new Item(new Item.Settings()));

@@ -1,8 +1,9 @@
 {
 	"required": true,
-	"package": "dev.williamknowleskellett.mixins",
+	"package": "dev.williamknowleskellett.cursed_iron.mixins",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
+		"IronGolemEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

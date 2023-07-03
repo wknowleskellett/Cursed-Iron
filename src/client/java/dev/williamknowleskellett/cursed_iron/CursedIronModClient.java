@@ -1,5 +1,18 @@
 package dev.williamknowleskellett.cursed_iron;
 
-public class CursedIronModClient {
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import net.fabricmc.api.ClientModInitializer;
+
+public class CursedIronModClient implements ClientModInitializer{
+
+    public static final Logger LOGGER = LoggerFactory.getLogger("cursed_iron");
+
+    @Override
+    public void onInitializeClient() {
+        // TODO Auto-generated method stub
+        LOGGER.info("SPEOIURSEGPOESGR!");    
+    }
     
 }

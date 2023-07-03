@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.williamknowleskellett.CursedIronMod"
+			"dev.williamknowleskellett.cursed_iron.CursedIronMod"
 		],
 		"client": [
-			"dev.williamknowleskellett.CursedIronModClient"
+			"dev.williamknowleskellett.cursed_iron.CursedIronModClient"
 		]
 	},
 	"mixins": [
@@ -31,7 +31,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
+		"minecraft": "~1.19.4",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
