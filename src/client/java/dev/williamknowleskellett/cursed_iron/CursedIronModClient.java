@@ -11,7 +11,6 @@ public class CursedIronModClient implements ClientModInitializer{
 
     @Override
     public void onInitializeClient() {
-        // TODO Auto-generated method stub
         LOGGER.info("SPEOIURSEGPOESGR!");    
     }
     
