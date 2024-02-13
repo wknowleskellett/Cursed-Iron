@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.2-SNAPSHOT'
+	id 'fabric-loom' version '1.5-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -21,13 +21,17 @@ repositories {
 loom {
     splitEnvironmentSourceSets()
 
-    mods {
-        "cursed-iron" {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
-    }
+	mods {
+		"cursed-iron" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
 
+}
+
+fabricApi {
+	configureDataGeneration()
 }
 
 dependencies {
@@ -69,7 +73,7 @@ java {
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
+		rename { "${it}_${project.base.archivesName.get()}"}
 	}
 }
 

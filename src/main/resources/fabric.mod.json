@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "cursed-iron",
 	"version": "${version}",
-	"name": "Cursed-iron",
+	"name": "Cursed Iron",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"William Knowles-Kellett"
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/cursed_iron/icon.png",
+	"icon": "assets/cursed-iron/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -20,17 +20,20 @@
 		],
 		"client": [
 			"dev.williamknowleskellett.cursed_iron.CursedIronModClient"
+		],
+		"fabric-datagen": [
+			"dev.williamknowleskellett.cursed_iron.CursedIronDataGenerator"
 		]
 	},
 	"mixins": [
-		"cursed_iron.mixins.json",
+		"cursed-iron.mixins.json",
 		{
-			"config": "cursed_iron.client.mixins.json",
+			"config": "cursed-iron.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
+		"fabricloader": ">=0.15.6",
 		"minecraft": "~1.19.4",
 		"java": ">=17",
 		"fabric-api": "*"

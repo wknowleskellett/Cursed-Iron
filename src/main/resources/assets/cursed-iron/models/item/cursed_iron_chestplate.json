@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "cursed_iron:item/cursed_iron_chestplate"
+    "layer0": "cursed-iron:item/cursed_iron_chestplate"
   }
 }
