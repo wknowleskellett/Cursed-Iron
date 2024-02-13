@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "cursed_iron:item/cursed_iron_shovel"
+    "layer0": "cursed-iron:item/cursed_iron_hoe"
   }
 }

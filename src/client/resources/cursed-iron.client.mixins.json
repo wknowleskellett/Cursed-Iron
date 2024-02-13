@@ -3,6 +3,7 @@
 	"package": "dev.williamknowleskellett.cursed_iron.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
+		"ExampleClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

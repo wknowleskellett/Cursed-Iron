@@ -24,8 +24,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class CursedIronMod implements ModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("cursed_iron");
-    public static final String MODID = "cursed_iron";
+	// This logger is used to write text to the console and the log file.
+	// It is considered best practice to use your mod id as the logger's name.
+	// That way, it's clear which mod wrote info, warnings, and errors.
+    public static final Logger LOGGER = LoggerFactory.getLogger(CursedIronMod.MODID);
+    public static final String MODID = "cursed-iron";
 
     public static final ArmorMaterial CURSED_IRON_ARMOR_MATERIAL = new CursedIronArmorMaterial();
     public static final ToolMaterial CURSED_IRON_TOOL_MATERIAL = new CursedIronToolMaterial();
@@ -47,12 +50,13 @@ public class CursedIronMod implements ModInitializer {
     public static final Item CURSED_IRON_LEGGINGS = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_leggings"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item CURSED_IRON_BOOTS = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_boots"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()));
 
-    @Override
-    public void onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
 
-        LOGGER.info("Hello Fabric world!");
-    }
+	@Override
+	public void onInitialize() {
+		// This code runs as soon as Minecraft is in a mod-load-ready state.
+		// However, some things (like resources) may still be uninitialized.
+		// Proceed with mild caution.
+
+		// LOGGER.info("Hello Fabric world!");
+	}
 }

@@ -6,7 +6,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "cursed_iron:cursed_iron_block_item"
+            "name": "cursed-iron:cursed_iron_block_item"
           }
         ],
         "conditions": [

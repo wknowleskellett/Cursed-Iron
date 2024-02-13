@@ -38,7 +38,7 @@
                 "function": "minecraft:set_count"
               }
             ],
-            "name": "cursed_iron:cursed_iron_ingot"
+            "name": "cursed-iron:cursed_iron_ingot"
           }
         ],
         "rolls": 1
