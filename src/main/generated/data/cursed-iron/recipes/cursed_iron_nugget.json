@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cursed-iron:cursed_iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "cursed-iron:cursed_iron_nugget"
+  }
+}

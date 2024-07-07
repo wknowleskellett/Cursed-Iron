@@ -50,6 +50,9 @@ public class CursedIronMod implements ModInitializer {
     public static final Item CURSED_IRON_LEGGINGS = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_leggings"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item CURSED_IRON_BOOTS = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_boots"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()));
 
+    // public static final Potion GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3), new StatusEffectInstance(StatusEffects.STRENGTH, 400, 1)));
+    // public static final Potion LONG_GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "long_golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 800, 3), new StatusEffectInstance(StatusEffects.STRENGTH, 800, 1)));
+    // public static final Potion STRONG_GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "strong_golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 5), new StatusEffectInstance(StatusEffects.STRENGTH, 400, 2)));
 
 	@Override
 	public void onInitialize() {
