@@ -1,0 +1,16 @@
+{
+    "item.cursed-iron.cursed_iron_ingot": "Cursed Iron Ingot",
+    "item.cursed-iron.cursed_iron_nugget": "Cursed Iron Nugget",
+    "block.cursed-iron.cursed_iron_block": "Block of Cursed Iron",
+
+    "item.cursed-iron.cursed_iron_sword": "Cursed Iron Sword",
+    "item.cursed-iron.cursed_iron_shovel": "Cursed Iron Shovel",
+    "item.cursed-iron.cursed_iron_pickaxe": "Cursed Iron Pickaxe",
+    "item.cursed-iron.cursed_iron_axe": "Cursed Iron Axe",
+    "item.cursed-iron.cursed_iron_hoe": "Cursed Iron Hoe",
+
+    "item.cursed-iron.cursed_iron_helmet": "Cursed Iron Helmet",
+    "item.cursed-iron.cursed_iron_chestplate": "Cursed Iron Chestplate",
+    "item.cursed-iron.cursed_iron_leggings": "Cursed Iron Leggings",
+    "item.cursed-iron.cursed_iron_boots": "Cursed Iron Boots"
+}
