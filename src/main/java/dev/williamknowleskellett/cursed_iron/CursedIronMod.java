@@ -1,6 +1,7 @@
 package dev.williamknowleskellett.cursed_iron;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.MapColor;
@@ -11,6 +12,8 @@ import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
@@ -54,12 +57,30 @@ public class CursedIronMod implements ModInitializer {
     // public static final Potion LONG_GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "long_golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 800, 3), new StatusEffectInstance(StatusEffects.STRENGTH, 800, 1)));
     // public static final Potion STRONG_GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "strong_golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 5), new StatusEffectInstance(StatusEffects.STRENGTH, 400, 2)));
 
-	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+		ItemGroupEvents.modifyEntriesEvent((ItemGroups.BUILDING_BLOCKS)).register(content -> {
+            content.addAfter(Items.IRON_BLOCK, CURSED_IRON_BLOCK_ITEM);
+        });
 
-		// LOGGER.info("Hello Fabric world!");
+        ItemGroupEvents.modifyEntriesEvent((ItemGroups.TOOLS)).register(content -> {
+            content.addAfter(Items.IRON_HOE, CURSED_IRON_SHOVEL);
+            content.addAfter(CURSED_IRON_SHOVEL, CURSED_IRON_PICKAXE);
+            content.addAfter(CURSED_IRON_PICKAXE, CURSED_IRON_AXE);
+            content.addAfter(CURSED_IRON_AXE, CURSED_IRON_HOE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent((ItemGroups.COMBAT)).register(content -> {
+            content.addAfter(Items.IRON_SWORD, CURSED_IRON_SWORD);
+            content.addAfter(Items.IRON_AXE, CURSED_IRON_AXE);
+            content.addAfter(Items.IRON_BOOTS, CURSED_IRON_HELMET);
+            content.addAfter(CURSED_IRON_HELMET, CURSED_IRON_CHESTPLATE);
+            content.addAfter(CURSED_IRON_CHESTPLATE, CURSED_IRON_LEGGINGS);
+            content.addAfter(CURSED_IRON_LEGGINGS, CURSED_IRON_BOOTS);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent((ItemGroups.INGREDIENTS)).register(content -> {
+            content.addAfter(Items.IRON_INGOT, CURSED_IRON_INGOT);
+            content.addAfter(Items.IRON_NUGGET, CURSED_IRON_NUGGET);
+        });
 	}
 }
