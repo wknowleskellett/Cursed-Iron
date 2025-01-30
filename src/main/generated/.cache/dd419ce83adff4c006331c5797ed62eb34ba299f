@@ -1,4 +1,4 @@
-// 1.19.4	2024-07-06T22:07:39.3790878	Cursed Iron/Recipes
+// 1.19.4	2025-01-30T13:00:21.8905452	Cursed Iron/Recipes
 c73d8975511cbed9e1940fdcd614747d4e3827a5 data\cursed-iron\advancements\recipes\tools\cursed_iron_axe.json
 21a0bc3141a7fe283a2d038788c7eeb1340d0cf3 data\cursed-iron\advancements\recipes\tools\cursed_iron_hoe.json
 9fdae065d8d0a43952d388f06935423dff572c18 data\cursed-iron\advancements\recipes\building_blocks\cursed_iron_block_item.json
@@ -9,7 +9,7 @@ ae07cc1280c2533411c43d616b880461473090bc data\cursed-iron\recipes\cursed_iron_bo
 75231a971173bd859f8ba33dc33ae13ad8421ed6 data\cursed-iron\recipes\cursed_iron_block_item.json
 b6d6262ebdf56adc992b9b67511fc4e17dcc4baa data\cursed-iron\advancements\recipes\combat\cursed_iron_helmet.json
 8c0844a667e49d28658a3dc3bde776f9521a828b data\cursed-iron\recipes\cursed_iron_chestplate.json
-e6dbd488e16c7e71b3af509ae4129d56b1045b0a data\cursed-iron\recipes\cursed_iron_nugget.json
+c725a764dcf017d85e58d67ce5a2a69502adfe57 data\cursed-iron\recipes\cursed_iron_nugget.json
 c79f0140cf3576aa397e250b6a2540a06d9367bb data\cursed-iron\advancements\recipes\combat\cursed_iron_boots.json
 b517f030523df6a21f9405e71ad38169b1ff0d7a data\cursed-iron\recipes\cursed_iron_shovel.json
 0a26fd92f982ecadab75155137cdfdbff72c1654 data\cursed-iron\advancements\recipes\misc\iron_ingot_from_smelting_cursed_iron_ingot.json

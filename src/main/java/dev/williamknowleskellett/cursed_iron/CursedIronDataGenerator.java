@@ -115,7 +115,7 @@ public class CursedIronDataGenerator implements DataGeneratorEntrypoint {
             .offerTo(exporter);
 
             //NUGGET
-            ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, CursedIronMod.CURSED_IRON_NUGGET)
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, CursedIronMod.CURSED_IRON_NUGGET, 9)
             .input(ingot)
             .criterion(FabricRecipeProvider.hasItem(ingot),
                     FabricRecipeProvider.conditionsFromItem(ingot))
