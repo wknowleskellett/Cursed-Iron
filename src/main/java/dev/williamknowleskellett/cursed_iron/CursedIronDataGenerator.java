@@ -14,7 +14,8 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
- 
+import net.minecraft.util.Identifier;
+
 public class CursedIronDataGenerator implements DataGeneratorEntrypoint {
  
     @Override
@@ -53,12 +54,33 @@ public class CursedIronDataGenerator implements DataGeneratorEntrypoint {
             //         FabricRecipeProvider.conditionsFromItem(stick))
             // .offerTo(exporter);
 
-            //BLOCK
+            //BLOCK from INGOT
             ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CursedIronMod.CURSED_IRON_BLOCK_ITEM).pattern("iii").pattern("iii").pattern("iii")
             .input('i', ingot)
             .criterion(FabricRecipeProvider.hasItem(ingot),
                     FabricRecipeProvider.conditionsFromItem(ingot))
             .offerTo(exporter);
+
+            //INGOT from NUGGET
+            ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ingot).pattern("nnn").pattern("nnn").pattern("nnn")
+                    .input('n', CursedIronMod.CURSED_IRON_NUGGET)
+                    .criterion(FabricRecipeProvider.hasItem(CursedIronMod.CURSED_IRON_NUGGET),
+                            FabricRecipeProvider.conditionsFromItem(CursedIronMod.CURSED_IRON_NUGGET))
+                    .offerTo(exporter);
+
+            //NUGGET from INGOT
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, CursedIronMod.CURSED_IRON_NUGGET, 9)
+                    .input(ingot)
+                    .criterion(FabricRecipeProvider.hasItem(ingot),
+                            FabricRecipeProvider.conditionsFromItem(ingot))
+                    .offerTo(exporter);
+
+            //INGOT from BLOCK
+            ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ingot, 9)
+                    .input(CursedIronMod.CURSED_IRON_BLOCK_ITEM)
+                    .criterion(FabricRecipeProvider.hasItem(CursedIronMod.CURSED_IRON_BLOCK_ITEM),
+                            FabricRecipeProvider.conditionsFromItem(CursedIronMod.CURSED_IRON_BLOCK_ITEM))
+                    .offerTo(exporter, new Identifier(CursedIronMod.MODID, "cursed_iron_ingot2"));
 
             //BOOTS
             ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, CursedIronMod.CURSED_IRON_BOOTS).pattern("i i").pattern("i i")
@@ -100,23 +122,9 @@ public class CursedIronDataGenerator implements DataGeneratorEntrypoint {
             //         FabricRecipeProvider.conditionsFromItem(stick))
             // .offerTo(exporter);
 
-            //INGOT
-            ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ingot).pattern("nnn").pattern("nnn").pattern("nnn")
-            .input('n', CursedIronMod.CURSED_IRON_NUGGET)
-            .criterion(FabricRecipeProvider.hasItem(CursedIronMod.CURSED_IRON_NUGGET),
-                    FabricRecipeProvider.conditionsFromItem(CursedIronMod.CURSED_IRON_NUGGET))
-            .offerTo(exporter);
-
             //LEGGINGS
             ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, CursedIronMod.CURSED_IRON_LEGGINGS).pattern("iii").pattern("i i").pattern("i i")
             .input('i', ingot)
-            .criterion(FabricRecipeProvider.hasItem(ingot),
-                    FabricRecipeProvider.conditionsFromItem(ingot))
-            .offerTo(exporter);
-
-            //NUGGET
-            ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, CursedIronMod.CURSED_IRON_NUGGET, 9)
-            .input(ingot)
             .criterion(FabricRecipeProvider.hasItem(ingot),
                     FabricRecipeProvider.conditionsFromItem(ingot))
             .offerTo(exporter);
