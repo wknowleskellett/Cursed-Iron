@@ -5,24 +5,25 @@
 	"name": "Cursed Iron",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"William Knowles-Kellett"
+		"William Knowles-Kellett",
+		"Ike Osenberg"
 	],
 	"contact": {
-		"homepage": "https://williamknowleskellett.dev/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://birdswithlegs.nl/",
+		"sources": "https://github.com/Birds-With-Legs-Studio/Cursed-Iron"
 	},
-	"license": "CC0-1.0",
+	"license": "LGPL-3.0",
 	"icon": "assets/cursed-iron/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dev.williamknowleskellett.cursed_iron.CursedIronMod"
+          "nl.birdswithlegs.cursed_iron.CursedIronMod"
 		],
 		"client": [
-			"dev.williamknowleskellett.cursed_iron.CursedIronModClient"
+          "nl.birdswithlegs.cursed_iron.CursedIronModClient"
 		],
 		"fabric-datagen": [
-			"dev.williamknowleskellett.cursed_iron.CursedIronDataGenerator"
+          "nl.birdswithlegs.cursed_iron.CursedIronDataGenerator"
 		]
 	},
 	"mixins": [

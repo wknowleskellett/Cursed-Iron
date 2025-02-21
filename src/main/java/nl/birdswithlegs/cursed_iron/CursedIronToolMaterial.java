@@ -1,4 +1,4 @@
-package dev.williamknowleskellett.cursed_iron;
+package nl.birdswithlegs.cursed_iron;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;

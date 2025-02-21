@@ -1,4 +1,4 @@
-package dev.williamknowleskellett.cursed_iron;
+package nl.birdswithlegs.cursed_iron;
 
 import java.util.List;
 import java.util.function.Consumer;

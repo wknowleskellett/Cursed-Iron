@@ -1,9 +1,14 @@
-# Fabric Example Mod
+# Cursed Iron Mod
 
-## Setup
+The Cursed Iron mod makes iron gathered from iron golems distinct from iron gathered underground.
+For now, the curse on the iron itself has few features tied to it, but if we come up with something good later we may add it.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Dependencies
+
+This requires the Fabric launcher and the Fabric API.
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is available under the LGPL-3.0 license. Roughly speaking, it can be shared for use alongside proprietary code like
+Minecraft itself, but any changes to the Cursed Iron mod itself must be released under LGPL-3.0 as well. See the
+[license](./LICENSE.md) for more details.

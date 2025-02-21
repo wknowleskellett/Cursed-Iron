@@ -1,4 +1,4 @@
-package dev.williamknowleskellett.cursed_iron.mixin;
+package nl.birdswithlegs.cursed_iron.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
-import dev.williamknowleskellett.cursed_iron.CursedIronMod;
+import nl.birdswithlegs.cursed_iron.CursedIronMod;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.IronGolemEntity;

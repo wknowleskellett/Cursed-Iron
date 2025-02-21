@@ -1,4 +1,4 @@
-package dev.williamknowleskellett.cursed_iron;
+package nl.birdswithlegs.cursed_iron;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

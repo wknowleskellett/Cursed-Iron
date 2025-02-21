@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "dev.williamknowleskellett.cursed_iron.mixin",
+	"package": "nl.birdswithlegs.cursed_iron.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"IronGolemEntityMixin"
+      "IronGolemEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
