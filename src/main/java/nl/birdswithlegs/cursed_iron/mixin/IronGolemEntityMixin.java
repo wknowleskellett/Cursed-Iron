@@ -43,6 +43,6 @@ public class IronGolemEntityMixin {
             itemStack.decrement(1);
         }
 
-        ci.setReturnValue(ActionResult.success(that.world.isClient));
+        ci.setReturnValue(ActionResult.success(that.getWorld().isClient));
     }
 }

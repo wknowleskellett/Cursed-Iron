@@ -1,37 +1,38 @@
 package nl.birdswithlegs.cursed_iron;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
 public class CursedIronDataGenerator implements DataGeneratorEntrypoint {
- 
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator generator) {
         FabricDataGenerator.Pack pack = generator.createPack();
- 
+
         pack.addProvider(CursedIronRecipeGenerator::new);
     }
 
     private static class CursedIronRecipeGenerator extends FabricRecipeProvider {
-        private CursedIronRecipeGenerator(FabricDataOutput generator) {
-            super(generator);
+        public CursedIronRecipeGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+            super(output, registriesFuture);
         }
 
         @Override
-        public void generate(Consumer<RecipeJsonProvider> exporter) {
+        public void generate(RecipeExporter exporter) {
             Item ingot = CursedIronMod.CURSED_IRON_INGOT;
             Item stick = Items.STICK;
 

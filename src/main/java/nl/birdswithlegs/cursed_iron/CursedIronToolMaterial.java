@@ -1,8 +1,11 @@
 package nl.birdswithlegs.cursed_iron;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 
 public class CursedIronToolMaterial implements ToolMaterial {
     ToolMaterial IRON = ToolMaterials.IRON;
@@ -23,9 +26,7 @@ public class CursedIronToolMaterial implements ToolMaterial {
     }
 
     @Override
-    public int getMiningLevel() {
-        return IRON.getMiningLevel();
-    }
+    public TagKey<Block> getInverseTag() { return IRON.getInverseTag(); }
 
     @Override
     public int getEnchantability() {
