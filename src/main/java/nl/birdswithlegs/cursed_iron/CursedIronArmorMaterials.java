@@ -18,6 +18,7 @@ import static nl.birdswithlegs.cursed_iron.CursedIronMod.MODID;
 
 public class CursedIronArmorMaterials {
     public static final RegistryEntry<ArmorMaterial> CURSED_IRON_ARMOR_MATERIAL = registerCursedIronArmorMaterial();
+    // TODO this soundevent isn't working
     public static final RegistryEntry.Reference<SoundEvent> CURSED_IRON_ARMOR_EQUIP = Registry.registerReference(Registries.SOUND_EVENT, new Identifier("entity.iron_golem.repair"), SoundEvent.of(new Identifier("entity.iron_golem.repair")));
 	private static final RegistryEntry<ArmorMaterial> IRON = ArmorMaterials.IRON;
 

@@ -37,11 +37,15 @@ public class CursedIronMod implements ModInitializer {
     public static final Item CURSED_IRON_PICKAXE = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_pickaxe"), new PickaxeItem(CURSED_IRON_TOOL_MATERIAL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(CURSED_IRON_TOOL_MATERIAL, 1.0F, -2.8F))));
     public static final Item CURSED_IRON_AXE = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_axe"), new AxeItem(CURSED_IRON_TOOL_MATERIAL, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(CURSED_IRON_TOOL_MATERIAL, 6.0F, -3.1F))));
     public static final Item CURSED_IRON_HOE = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_hoe"), new HoeItem(CURSED_IRON_TOOL_MATERIAL, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(CURSED_IRON_TOOL_MATERIAL, -2.0F, -1.0F))));
-    
+
+    // TODO this armor isn't rendering right, check how the armor is registered now with trims
     public static final Item CURSED_IRON_HELMET = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_helmet"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()));
     public static final Item CURSED_IRON_CHESTPLATE = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_chestplate"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
     public static final Item CURSED_IRON_LEGGINGS = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_leggings"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item CURSED_IRON_BOOTS = Registry.register(Registries.ITEM, new Identifier(MODID, "cursed_iron_boots"), new ArmorItem(CURSED_IRON_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()));
+
+    // TODO Add cursed iron trims
+    // TODO Add animal armor
 
     // public static final Potion GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 3), new StatusEffectInstance(StatusEffects.STRENGTH, 400, 1)));
     // public static final Potion LONG_GOLEM_SOUL = Registry.register(Registries.POTION, new Identifier(MODID, "long_golem_soul"), new Potion(new StatusEffectInstance(StatusEffects.SLOWNESS, 800, 3), new StatusEffectInstance(StatusEffects.STRENGTH, 800, 1)));
